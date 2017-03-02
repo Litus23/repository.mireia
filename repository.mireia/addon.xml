@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.mireia" name="Litus repository" version="1.0.1" provider-name="Litus">
+	<extension point="xbmc.addon.repository" name="Litus Repository">
+		<info compressed="false">http://raw.github.com/Litus23/repository.mireia/master/addons.xml</info>
+		<checksum>http://raw.github.com/Litus23/repository.mireia/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/Litus23/repository.mireia/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Third party Kodi addons updates/mods</summary>
+		<description>Repositori amb tot lo necessari per a Kodi</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
