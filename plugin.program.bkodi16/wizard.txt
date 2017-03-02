@@ -1,0 +1,5 @@
+name="lituskodi16"
+url="https://www.dropbox.com/s/jfog3md33b9zlov/lituskodi16.zip?dl=1"
+img="https://lituskodi16.000webhostapp.com/icon.png"
+fanart="https://lituskodi16.000webhostapp.com/fanart.jpg"
+description="lituskodi16"

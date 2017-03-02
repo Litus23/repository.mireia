@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.cine" name="Cine" version="1.0.23" provider-name="Topo">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Cine</summary>
+    <description>Addon de Cine</description>
+    <disclaimer></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.pelisalacarta"
+    name="pelisalacarta"
+    version="02.13"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.libtorrent" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">PelÃ­culas y series a la carta</summary>
+    <description lang="es">PelÃ­culas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en EspaÃ±ol, Italiano e InglÃ©s.</description>
+    <summary lang="en">Movies and TV Shows on demand</summary>
+    <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian and English.</description>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/pelisalacarta</source>
+  </extension>
+  <extension point="xbmc.service" library="library_service.py" start="login|startup">
+  </extension>
+</addon>
+
+<addon id="plugin.video.sapoaddon"
+       name="SAPOIPTV"
+       version="0.0.2"
+       provider-name="entreunosyceros">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+	<import addon="script.module.livestreamer" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>SAPOIPTV - entreunosyceros</summary>
+    <description>Addon creado solo con la intenciÃ³n de aprender. Se pone a disposiciÃ³n de quiÃ©n lo necesite tan solo con fines didÃ¡cticos. Para su perfecto funcionamiento es necesario tener instalado f4mtester, SportDevil (en su Ãºltima versiÃ³n) y urlResolver para su correcto funcionamiento. Los enlaces han sido obtenidos de forma legal por internet mediante el navegador firefox. No soy responsable ni de los contenidos ni de la estabilidad de los mismos. Los canales son tomados de pÃ¡ginas web que emiten en abierto la seÃ±al para todo el mundo. Este addon no busca generar beneficios ni pÃ©rdidas a nadie.
+ </description>
+  <disclaimer>La mayorÃ­a de los canales son obtenidos directamente de pÃ¡ginas web. Si las pÃ¡ginas dejan de emitir o cambian su configuraciÃ³n, el plugin dejarÃ¡ de recibir seÃ±al. Los canales caÃ­dos se repondrÃ¡n a medida que se pueda. Cuando un canal no cargue a la primera, se recomienda intentar acceder a el varias veces. En ocasiones las pÃ¡ginas tardan en enviar la seÃ±al correspondiente.
+ </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="repository.catoal" name="Catoal repository" version="1.0.2" provider-name="Catoal">
+	<extension point="xbmc.addon.repository" name="Catoal Repository">
+		<info compressed="false">http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml</info>
+		<checksum>http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/catoalkodi/repository.catoal/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Catoal Addon</summary>
+		<description>Repositorio con todo lo necesario para instalar sin problemas Catoal.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.echo" name="[COLOR greenyellow]ECHO[/COLOR] [COLOR white]Repository[/COLOR]" version="1.04" provider-name="Echo Coder">
+	<extension point="xbmc.addon.repository" name="Echo Coder Repository">
+		<dir>
+			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		</dir>
+		<info compressed="false">https://raw.githubusercontent.com/echocoderkodi/repository.echo/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/echocoderkodi/repository.echo/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/echocoderkodi/repository.echo/master/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The official Echo Coder Repository.</summary>
+		<description>Support available at Twitter: @EchoCoder</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.Kinkin" name="Kinkins REPO" version="1.4" provider-name="Kinkin">
+	<extension point="xbmc.addon.repository" name="Kinkin Addon Repository">
+		<info compressed="false">https://offshoregit.com/kinkin-xbmc-repository/addons.xml</info>
+		<checksum>https://offshoregit.com/kinkin-xbmc-repository/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/kinkin-xbmc-repository/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install Kinkins Addons</summary>
+		<description>Install addons by Kinkin</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.mireia" name="Litus repository" version="1.0.1" provider-name="Litus">
+	<extension point="xbmc.addon.repository" name="Litus Repository">
+		<info compressed="false">http://raw.github.com/Litus23/repository.mireia/master/addons.xml</info>
+		<checksum>http://raw.github.com/Litus23/repository.mireia/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/Litus23/repository.mireia/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Third party Kodi addons updates/mods</summary>
+		<description>Repositori amb tot lo necessari per a Kodi</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.shani" name="Shanis Addon Repository" version="2.9" provider-name="Shani">
+	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
+        <dir>
+			<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+			<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+		</dir>
+
+    <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
+    <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
+    <datadir zip="true">https://offshoregit.com/Shani-08/main/zips</datadir>
+
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC for Zemtv etc</summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.xbmcadult" name="XBMC-Adult Addons" version="1.0.6" provider-name="xbmc-adult">
+	<extension point="xbmc.addon.repository" name="XBMC Adult Addons">
+		<info compressed="false">http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster/addons.xml</info>
+		<checksum>http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/xbmc-adult/xbmc-adult/ghmaster</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>XBMC Addons for Adults Only</summary>
+		<description>This repository contains addons that are for adults only. You may only view the contents of this repository if you are at least 18 years of age, or at least the age of majority in the jurisdiction where you reside or from which you access this content.</description>
+		<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id='script.module.libtorrent' version='1.1.1d' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="python_libtorrent"/>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
+    <summary lang='ru'>script.module.libtorrent - Ð¼Ð¾Ð´ÑƒÐ»ÑŒ Kodi, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ ÑƒÐ¿Ñ€Ð¾Ñ‰Ð°ÐµÑ‚ Ð¸Ð¼Ð¿Ð¾Ñ€Ñ‚ Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÐ¸ python-libtorrent.</summary>
+    <license>MIT License</license>
+    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
+  </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
+<addon id="script.module.magnetic" name="[COLOR FFFFD800]Magnetic[/COLOR] Torrent Manager" version="0.9.84b"
+       provider-name="mancuniancol">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="kodi.context.item" library="contextitem.py">
+        <item>
+            <label>32010</label>
+            <visible>StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,tvshow) |
+                StringCompare(ListItem.dbtype,season)|!String.IsEmpty(ListItem.OriginalTitle)|
+                !String.IsEmpty(ListItem.IMDBNumber)|!String.IsEmpty(ListItem.TVShowTitle)|
+                !String.IsEmpty(ListItem.Season)|!String.IsEmpty(ListItem.Episode)
+            </visible>
+        </item>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.python.module" library="resources/lib"/>
+    <extension point="xbmc.addon.metadata">
+        <summary>Magnets and Torrents Collector</summary>
+        <description>Magnetic is Add-on for Kodi which allows to search torrents for other Add-ons like Quasar or
+            Torrent V2.[CR]It also can work independently using the action called Magnetizer in any contextual menu in
+            Kodi.
+        </description>
+        <disclaimer>The author does not host or distribute any of the content displayed by this addon.[CR]The author
+            does not have any affiliation with the content provider.
+        </disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website>http://tvaddons.ag/</website>
+        <forum>https://forums.tvaddons.ag/addon-releases/31572-pulsar-providers-unofficial-pulsar-repo.html</forum>
+        <source>https://github.com/mancuniancol/script.module.magnetic</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshots/screenshot1.PNG</screenshot>
+            <screenshot>resources/screenshots/screenshot2.PNG</screenshot>
+            <screenshot>resources/screenshots/screenshot3.PNG</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.plex"
+       name="Plex"
+       version="0.0.99"
+       provider-name="Plex">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.requests" version="2.3.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.python.pluginsource" library="plugin.py"></extension>
+    <extension point="xbmc.service" library="service.py" start="startup"></extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Plex for Kodi</summary>
+        <description lang="en">Official Plex for Kodi add-on</description>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>https://forums.plex.tv/categories/plex-for-kodi</forum>
+        <website>https://www.plex.tv</website>
+        <source>https://github.com/plexinc/plex-for-kodi</source>
+        <platform>all</platform>
+        <disclaimer>This beta release requires a Plex Pass</disclaimer>
+    </extension>
+</addon>
+</addons>
