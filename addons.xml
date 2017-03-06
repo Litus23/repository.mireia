@@ -68,7 +68,7 @@
 
 <addon id="plugin.video.pelisalacarta"
     name="pelisalacarta"
-    version="03.01"
+    version="03.03"
     provider-name="tvalacarta">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
