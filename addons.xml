@@ -310,7 +310,7 @@
 
 <addon id="script.plex"
        name="Plex"
-       version="0.0.99"
+       version="0.0.102"
        provider-name="Plex">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
